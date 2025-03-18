@@ -1,0 +1,180 @@
+:root {
+    --primary-colour: #4D55CC;
+    --primary-colour-dark: #211C84;
+    --text-dark: #7A73D1;
+    --text-light: #B5A8D5;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font: "Lato", "Oswald";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--header-font);
+    background: linear-gradient(to top, var(--primary-colour) 30%, var(--primary-colour-dark) 70%);
+    padding-top: 80px;
+}
+
+.header {
+    flex: 1;
+    padding: 0;
+}
+
+.logo i {
+    font-size: 2rem;
+    color: var(--text-dark);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: var(--primary-colour-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav_link {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_link a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 4px solid transparent;
+}
+
+.nav_link a:hover {
+    color: var(--primary-colour);
+    border-bottom: 3px solid var(--text-dark);
+}
+
+body h1 {
+    text-align: center;
+    margin: 2rem;
+    color: var(--white);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 2rem;
+    padding: 2rem;
+    color: var(--white);
+    background-color: var(--primary-colour);
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.about:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about p {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    flex: 1;
+}
+
+.about img {
+    width: 150px;
+    height: auto;
+    margin-right: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.about:hover img {
+    opacity: 1;
+}
+
+.portofolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    color: var(--white);
+    background-color: var(--primary-colour);
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.card h3 {
+    margin: 1rem 0;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.video-container iframe {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.footer {
+    background-color: var(--primary-colour-dark);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.footer a {
+    display: flexbox;
+    justify-content: space-between;
+    gap: 2rem;
+}
+form {    margin: 20px 0;    padding: 20px;    border: 1px solid #ccc;    border-radius: 5px;    background-color: #f9f9f9;}form label {    display: block;    margin-bottom: 8px;    font-weight: bold;}form input[type="text"],form input[type="email"],form textarea {    width: 100%;    padding: 10px;    margin-bottom: 10px;    border: 1px solid #ccc;    border-radius: 5px;}form input[type="submit"] {    padding: 10px 20px;    border: none;    border-radius: 5px;    background-color: #4CAF50;    color: white;    cursor: pointer;}form input[type="submit"]:hover {    background-color: #45a049;}table {    width: 100%;    border-collapse: collapse;    margin: 20px 0;}table, th, td {    border: 1px solid #ddd;}th, td {    padding: 12px;    text-align: left;}th {    background-color: #f2f2f2;}tr:nth-child(even) {    background-color: #f9f9f9;}tr:hover {    background-color: #f1f1f1;}
