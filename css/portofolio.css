@@ -114,7 +114,6 @@ body h1 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
 form {
     margin: 20px 0;
     padding: 20px;
@@ -152,15 +151,70 @@ form input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-.footer {
-    background-color: var(--primary-colour-dark);
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
+.portfolio-form {
+    background-color: var(--form-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
 }
 
-.footer a {
-    display: flexbox;
-    justify-content: space-between;
-    gap: 2rem;
+.portfolio-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.portfolio-form input,
+.portfolio-form textarea,
+.portfolio-form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.portfolio-form textarea {
+    resize: none;
+}
+
+.portfolio-form button {
+    background-color: var(--text-dark);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-form button:hover {
+    background-color: var(--primary-colour);
+}
+
+.footer {
+    background-color: var(--primary-colour-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .social-media a {
+    color: var(--white);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-media a:hover {
+    color: var(--primary-colour);
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
